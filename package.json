@@ -1,12 +1,12 @@
 {
-  "name": "personal-webpage",
+  "name": "portfolio-webpage",
   "version": "0.1.0",
-  "description": "Simple static webpage served from ./webpage",
+  "description": "Simple static webpage served from portfolio repo",
   "private": false,
   "scripts": {
-    "dev": "npx live-server ./webpage --port=3001 --host=0.0.0.0 --open=index.html",
-    "start": "npx http-server ./webpage -p 3000 -c-1",
-    "serve": "npx http-server ./webpage -p 3000 -c-1"
+    "dev": "npx live-server ./ --port=3001 --host=0.0.0.0 --open=index.html",
+    "start": "npx http-server ./ -p 3000 -c-1",
+    "serve": "npx http-server ./ -p 3000 -c-1"
   },
   "devDependencies": {
     "live-server": "^1.2.1"
