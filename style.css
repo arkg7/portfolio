@@ -17,15 +17,23 @@ body {
     border: 15px solid black;
 }
 
+.page-container {
+    width: 100%;
+    display: flex;
+}
+
 .body-container {
-    width: calc(100vw - 30px);
+    padding-top: 85px;
+    width: calc(100% - 75px);
     height: calc(100vh - 30px);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 .left-block{
     width: 75px;
-    height: calc(100vh - 30px);
+    height: 100%;
     background: black;
     color: #c2fe0c;
     font-size: 60px;
@@ -43,10 +51,7 @@ body {
     background: white;
     height: 450px;
     overflow: visible;
-    width: calc(100% - 105px);
-    position: absolute;
-    top: 100px;
-    right: 15px;
+    width: 100%;
     border-bottom: 1px solid rgb(97, 97, 97);
     border-top: 1px solid rgb(97, 97, 97);
 }
@@ -138,6 +143,7 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 5%;
     margin-bottom: 20px;
 }
@@ -153,7 +159,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease, color 0.3s ease;
-    
+    margin: 15px;
 }
 
 .social-link:hover {
@@ -164,9 +170,6 @@ body {
 .bottom-container {
     height: calc(100vh - 565px);
     width: calc(100vw - 105px);
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
     background: #c2fe0c;
     display: flex;
 }
@@ -207,26 +210,24 @@ body {
         width: 100vw;
         box-sizing: border-box;
     }
+    .body-container {
+        padding-top: 0px;
+        width: 100%;
+    }
 
     .left-block{
         display: none;
     }
 
     .card-container {
-    background: white;
-    height: 450px;
-    overflow: visible;
-    width: calc(100% - 30px);
-    border-bottom: 1px solid rgb(97, 97, 97);
-    border-top: 1px solid rgb(97, 97, 97);
+        height: auto;
     }
 
     .bottom-container {
+    padding-top: 12px;
     height: calc(100vh - 565px);
+    min-height: 300px;
     width: 100vw;
-    position: absolute;
-    bottom: 15px;
-    right: 0px;
     background: transparent;
     display: flex;
     justify-content: center;
