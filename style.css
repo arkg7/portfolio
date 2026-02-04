@@ -225,11 +225,9 @@ body {
 
     .bottom-container {
     padding-top: 12px;
-    height: calc(100vh - 565px);
     min-height: 300px;
     width: 100vw;
     background: transparent;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     }
