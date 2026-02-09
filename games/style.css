@@ -2,14 +2,22 @@ body{
     background: #c2fe0c;
     display: flex;
     justify-content: center;
+    font-family: Courier, monospace;
 }
 
 .terminal-table {
     background: black;
     color: white;
+    font-family: Courier, monospace;
 }
 
 code {
     font-family: Courier, monospace;
     font-size: 13px;
+}
+
+.back-button {
+    color: #00ee00;
+    text-decoration: none;
+
 }
