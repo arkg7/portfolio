@@ -237,6 +237,12 @@ body {
     color: #c2fe0c;
 }
 
+@media screen and (max-width: 1150px) {
+        .cat-box {
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 1104px) {
     body {
@@ -264,9 +270,5 @@ body {
     background: transparent;
     justify-content: center;
     flex-wrap: wrap;
-    }
-
-    .cat-box {
-        display: none;
     }
 }
