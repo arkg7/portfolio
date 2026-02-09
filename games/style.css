@@ -1,0 +1,15 @@
+body{
+    background: #c2fe0c;
+    display: flex;
+    justify-content: center;
+}
+
+.terminal-table {
+    background: black;
+    color: white;
+}
+
+code {
+    font-family: Courier, monospace;
+    font-size: 13px;
+}
