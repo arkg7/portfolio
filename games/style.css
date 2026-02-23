@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Maratype';
-    src: url('/fonts/Maratype.otf') format('opentype');
+    src: url('../fonts/Maratype.woff') format('woff');
+    src: url('../fonts/Maratype.woff2') format('woff2');
+    src: url('../fonts/Maratype.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'UESCtype';
-    src: url('/fonts/UESCtype.otf') format('opentype');
+    src: url('../fonts/UESCtype.otf') format('opentype');
 }
 
 body{
@@ -13,7 +15,7 @@ body{
     font-family: Courier, monospace;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin-top: 30px;
 }
 
 .back-button {
@@ -64,11 +66,14 @@ body{
 }
 
 .seal-banner {
-    height: 80vh;
-    width: 70px;
+    height: 100vh;
+    width: 100px;
     background: #fff8d4;
-    font-size: 60px;
-    
+    font-size: 70px;
+    font-family: 'Maratype', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     
 }
 
