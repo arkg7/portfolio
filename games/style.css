@@ -1,13 +1,15 @@
 @font-face {
     font-family: 'Maratype';
-    src: url('../fonts/Maratype.woff') format('woff');
-    src: url('../fonts/Maratype.woff2') format('woff2');
-    src: url('../fonts/Maratype.otf') format('opentype');
+    src: url('/fonts/Maratype.woff') format('woff');
+    src: url('/fonts/Maratype.woff2') format('woff2');
+    src: url('/fonts/Maratype.otf') format('opentype');
+    font-style: normal;
+    font-weight: 100;
 }
 
 @font-face {
     font-family: 'UESCtype';
-    src: url('../fonts/UESCtype.otf') format('opentype');
+    src: url('/fonts/UESCtype.otf') format('opentype');
 }
 
 body{
@@ -74,28 +76,51 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    
+    white-space: nowrap;
 }
 
 .seal-text {
     writing-mode: vertical-rl;
-    text-orientation: sideways;
-    transform: rotate(180deg);
+    height: max-content;
+    text-orientation: sideways-right;
+    rotate: 180deg;
+    animation: text-scroll-up 10s linear infinite;
 }
 
 .seal-text2 {
     writing-mode: vertical-lr;
+    height: max-content;
     text-orientation: sideways;
+    animation: text-scroll-down 10s linear infinite;
 }
 
 .seal-banner-left {
     position: absolute;
     left: 0;
     top: 0;
+
 }
 
 .seal-banner-right {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+@keyframes text-scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(51.625%);
+    }
+}
+
+@keyframes text-scroll-down {
+    0% {
+        transform: translateY(-51.625%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
