@@ -1,23 +1,96 @@
+@font-face {
+    font-family: 'Maratype';
+    src: url('/fonts/Maratype.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'UESCtype';
+    src: url('/fonts/UESCtype.otf') format('opentype');
+}
+
 body{
     background: #c2fe0c;
+    font-family: Courier, monospace;
     display: flex;
     justify-content: center;
-    font-family: Courier, monospace;
-}
-
-.terminal-table {
-    background: black;
-    color: white;
-    font-family: Courier, monospace;
-}
-
-code {
-    font-family: Courier, monospace;
-    font-size: 13px;
+    margin: 0;
 }
 
 .back-button {
     color: #00ee00;
     text-decoration: underline;
 
+}
+
+.terminal-container {
+    background: black;
+    color: white;
+    font-family: Courier, monospace;
+    height: 640px;
+    width: 800px;
+    border-top: 50px;
+}
+
+.terminal-header {
+    background: #270000;
+    height: 20px;
+    color: #FF0000;
+    font-size: 14px;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.terminal-body {
+    height: 600px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.terminal-footer {
+    background: #270000;
+    height: 20px;
+    color: #FF0000;
+    font-size: 14px;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.credits {
+    position: absolute;
+    bottom: 20px;
+}
+
+.seal-banner {
+    height: 80vh;
+    width: 70px;
+    background: #fff8d4;
+    font-size: 60px;
+    
+    
+}
+
+.seal-text {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+}
+
+.seal-text2 {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+}
+
+.seal-banner-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.seal-banner-right {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
