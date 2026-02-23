@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Maratype';
     src: url('/fonts/Maratype.woff') format('woff');
-    src: url('/fonts/Maratype.woff2') format('woff2');
-    src: url('/fonts/Maratype.otf') format('opentype');
     font-style: normal;
     font-weight: 100;
 }
@@ -33,6 +31,7 @@ body{
     height: 640px;
     width: 800px;
     border-top: 50px;
+    border: 5px solid #c2fe0c;
 }
 
 .terminal-header {
@@ -70,13 +69,15 @@ body{
 .seal-banner {
     height: 100vh;
     width: 100px;
-    background: #fff8d4;
     font-size: 70px;
-    font-family: 'Maratype', sans-serif;
+    font-family: 'UESCtype', sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    background: #fffefe;
+    background-image: url('/resources/noise.svg');
+    mix-blend-mode: difference;
 }
 
 .seal-text {
