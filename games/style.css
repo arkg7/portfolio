@@ -1,13 +1,6 @@
 @font-face {
-    font-family: 'Maratype';
-    src: url('/fonts/Maratype.woff') format('woff');
-    font-style: normal;
-    font-weight: 100;
-}
-
-@font-face {
     font-family: 'UESCtype';
-    src: url('/fonts/UESCtype.otf') format('opentype');
+    src: url('./fonts/UESCtype.otf') format('opentype');
 }
 
 body{
