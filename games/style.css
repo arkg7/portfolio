@@ -74,6 +74,10 @@ body{
 .music-link {
     color: #c2fe0c
 }
+.music-link:hover {
+    color: #00ee00;
+    text-decoration: underline;
+}
 
 .terminal-footer {
     background: #270000;
