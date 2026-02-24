@@ -71,6 +71,10 @@ body{
     position: relative;
 }
 
+.music-link {
+    color: #c2fe0c
+}
+
 .terminal-footer {
     background: #270000;
     height: 20px;
