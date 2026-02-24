@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Maratype';
+    src: url('/fonts/Maratype.woff') format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'UESCtype';
+    src: url('/fonts/UESCtype.otf') format('opentype');
+}
+
+body{
+    background: #c2fe0c;
+    font-family: Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.background-container {
+    background: linear-gradient(to top, #500400, #b80900);
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: calc(100vw - 200px);
+    height: 100%;
+    z-index: -1;
+}
+
+.background-noise {
+    width: 100%;
+    height: 100%;
+    background-image: url('/resources/back_noise.svg');
+    background-size: cover;
+    opacity: 0.5;
+    mix-blend-mode: color-burn;
+}
+
+.back-button {
+    color: #00ee00;
+    text-decoration: underline;
+
+}
+
+.terminal-container {
+    background: black;
+    color: white;
+    font-family: Courier, monospace;
+    height: 640px;
+    width: 800px;
+    border-top: 50px;
+    border: 5px solid #c2fe0c;
+    border-bottom: 13px solid #c2fe0c;
+    box-shadow: 0 0 50px #FF0000 ;
+}
+
+.terminal-header {
+    background: #270000;
+    height: 20px;
+    color: #FF0000;
+    font-size: 14px;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.terminal-body {
+    height: 600px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.music-link {
+    color: #c2fe0c
+}
+.music-link:hover {
+    color: #00ee00;
+    text-decoration: underline;
+}
+
+.terminal-footer {
+    background: #270000;
+    height: 20px;
+    color: #FF0000;
+    font-size: 14px;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.credits {
+    position: absolute;
+    bottom: 20px;
+}
+
+.seal-banner {
+    height: 100vh;
+    width: 100px;
+    font-size: 70px;
+    font-family: 'UESCtype', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    background: #fffefe;
+    background-image: url('/resources/noise.svg');
+    mix-blend-mode: difference;
+}
+
+.seal-text {
+    writing-mode: vertical-rl;
+    height: max-content;
+    text-orientation: sideways-right;
+    rotate: 180deg;
+    animation: text-scroll-up 20s linear infinite;
+}
+
+.seal-text2 {
+    writing-mode: vertical-lr;
+    height: max-content;
+    text-orientation: sideways;
+    animation: text-scroll-down 20s linear infinite;
+}
+
+.seal-banner-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.seal-banner-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes text-scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(51.625%);
+    }
+}
+
+@keyframes text-scroll-down {
+    0% {
+        transform: translateY(-51.625%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
