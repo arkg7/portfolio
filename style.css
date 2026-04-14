@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Bitcount Single';
+    src: url('../fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;

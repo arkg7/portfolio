@@ -3,6 +3,11 @@
     src: url('../fonts/UESCtype.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Bitcount single';
+    src: url('../fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf') format('truetype');
+}
+
 html {
     height: 100vh
 }
@@ -171,6 +176,7 @@ body{
 .screenshot {
     max-width: 300px;
     max-height: 300px;
+    size: contain;
     width: auto;
     height: auto;
 }
