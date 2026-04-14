@@ -3,6 +3,11 @@
     src: url('../fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'DotGothic';
+    src: url('../fonts/DotGothic16-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@
 }
 
 body {
-    font-family: 'Bitcount Single', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Bitcount Single', sans-serif;
     display: flex;
     min-height: 100%;
     background-image: repeating-linear-gradient(
@@ -48,7 +53,7 @@ body {
     font-weight: 800;
     word-break: break-all;
     line-height: 15vh;
-    font-family: 'DotGothic16', monospace;
+    font-family: 'DotGothic', monospace;
     border-right: 1px solid rgb(97, 97, 97);
 }
 
