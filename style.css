@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Bitcount Single';
-    src: url('../fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf') format('truetype');
+    src: url('fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'DotGothic';
-    src: url('../fonts/DotGothic16-Regular.ttf') format('truetype');
+    src: url('fonts/DotGothic16-Regular.ttf') format('truetype');
 }
 
 * {
