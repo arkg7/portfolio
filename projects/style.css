@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Maratype';
-    src: url('../fonts/Maratype.otf') format('opentype');
+    font-family: 'UESCtype';
+    src: url('../fonts/UESCtype.otf') format('opentype');
 }
 
 html {
@@ -15,6 +15,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.back-button {
+    background: #ececec;
+    border-top: 1px solid #979797;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Bitcount Single', sans-serif;
+    border: 1px solid whitesmoke
+}
+
+.back-button:hover {
+    background: #000000;
+    color: #c2fe0c;
 }
 
 .background-gradient{
@@ -69,6 +89,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .left {
@@ -77,12 +98,28 @@ body{
 
 .right {
     right: -10vw;
+    height: calc(95vh - 16px);
+    writing-mode: vertical-lr;
+    font-size: 90px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    background-color: #225fd1;
+    border-top: 8px solid #5893ff;
+    border-bottom: 8px solid #5893ff;
 }
 
 .moth {
     image-rendering: pixelated;
     width: 80px;
     padding-top: 15px;
+}
+
+.moth-text {
+    color: rgb(0, 255, 21);
+    font-size: 8px;
+    padding-top: 50px;
+    font-family: 'courier', sans-serif;
 }
 
 .project-panel-holder {
@@ -124,6 +161,13 @@ body{
     height: auto;
 }
 
+.banner-text {
+    color: white;
+    font-family: 'UESCtype', sans-serif;
+    animation: text-scroll 40s linear infinite;
+    height: max-content;
+}
+
 @keyframes grid-scroll {
     0% {
         top: -100vh;
@@ -133,4 +177,24 @@ body{
         top: -5.5vh;
         left: -6vw;
     }
+}
+
+@keyframes text-scroll {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-31%);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .side-bar{
+        display: none;
+    }
+
+    .projects-container{
+        width: 70vw;
+    }
+
 }
