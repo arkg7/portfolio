@@ -94,6 +94,19 @@ body{
 
 .left {
     left: -10vw;
+    overflow: hidden;
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../resources/back-grid.png");
+    background-repeat: repeat;
+    background-size: 10%;
+    opacity: .2;
 }
 
 .right {
