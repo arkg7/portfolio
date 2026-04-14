@@ -1,0 +1,112 @@
+html {
+    height: 100vh
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #5759ac, #4243a9, #2e2e6d);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-gradient{
+    background: url('../resources/proj_noise.svg');
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+
+.background-blur-container{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -1
+}
+
+.background-blur{
+    position: absolute;
+    height: 200vh;
+    width: 200vw;
+    background-image: url("../resources/back-grid.png");
+    background-color: #000000;
+    opacity: .22;
+    z-index: -1;
+    animation: grid-scroll 45s linear infinite;
+}
+
+.projects-container{
+    height: 80vh;
+    width: 50vw;
+    position: relative;
+    background: rgb(10, 10, 10);
+    padding: 2vh;
+    opacity: .99;
+}
+
+.side-bar{
+    position: absolute;
+    height: 95vh;
+    width: 10vw;
+    top: -6vh;
+    background: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left {
+    left: -10vw;
+}
+
+.right {
+    right: -10vw;
+}
+
+.moth {
+    image-rendering: pixelated;
+    width: 80px;
+    padding-top: 15px;
+}
+
+.project-panel-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+
+}
+
+.project-panel {
+    background: white;
+    min-width: 200px;
+    min-height: 200px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+
+}
+
+@keyframes grid-scroll {
+    0% {
+        top: -100vh;
+        left: -40vw;
+    }
+    100% {
+        top: -5.5vh;
+        left: -6vw;
+    }
+}
